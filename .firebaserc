@@ -1,0 +1,18 @@
+{
+  "targets": {
+    "chat-6612c": {
+      "hosting": {
+        "app": [
+          "chat-6612c"
+        ]
+      }
+    },
+    "chatapp-2d71e": {
+      "hosting": {
+        "app": [
+          "chatapp-2d71e"
+        ]
+      }
+    }
+  }
+}

@@ -7,14 +7,22 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-tab-button (click)="music()" >
+        <ion-icon name="musical-notes"></ion-icon>
+        <ion-label>Music Player</ion-label>
+      </ion-tab-button>
+    </ion-col>
+    <ion-col>
+      <ion-tab-button (click)="login()" >
+        <ion-icon name="chatbubbles-sharp"></ion-icon>
+        <ion-label>Chat</ion-label>
+      </ion-tab-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+
 </ion-content>
