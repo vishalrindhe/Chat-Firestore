@@ -7,15 +7,14 @@ import { Router } from '@angular/router';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
   constructor(private router: Router) {}
-  login(){
-this.router.navigateByUrl('login')
+  login() {
+    this.router.navigateByUrl('login');
   }
 
-
-  music(){
-this.router.navigateByUrl('/')
-    
+  music() {
+    this.router.navigateByUrl('music');
   }
+
+  
 }
