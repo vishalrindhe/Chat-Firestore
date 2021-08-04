@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ModalController } from '@ionic/angular';
+import { ModalAbcComponent } from '../modal-abc/modal-abc.component';
+
 
 @Component({
   selector: 'app-home',
@@ -7,7 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  constructor(private router: Router) {}
+  constructor(private router: Router,public modalController: ModalController) {}
   login() {
     this.router.navigateByUrl('login');
   }
@@ -16,5 +19,14 @@ export class HomePage {
     this.router.navigateByUrl('music');
   }
 
+  async presentModal() {
+    const modal = await this.modalController.create({
+      component: ModalAbcComponent,
+      cssClass: 'my-custom-class'
+    });
+    return await modal.present();
+  }
+
+  
   
 }
